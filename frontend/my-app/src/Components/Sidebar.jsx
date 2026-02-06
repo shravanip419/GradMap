@@ -12,6 +12,7 @@ const Sidebar = () => {
         <li>⚙️</li>
       </ul>
     </div>
+    
   );
 };
 
