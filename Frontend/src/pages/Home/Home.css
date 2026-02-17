@@ -1,0 +1,99 @@
+/* ================= HERO SECTION ================= */
+
+.home-page header {
+    position: relative;
+    background-image: linear-gradient(rgba(5, 10, 35, 0.85), rgba(5, 10, 35, 0.85)),
+        url(../../utils/images/home-page-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+/* Animated Fade In */
+.home-page header h1 {
+    animation: fadeUp 1s ease forwards;
+    opacity: 0;
+}
+
+.home-page header p {
+    width: 70%;
+    animation: fadeUp 1.5s ease forwards;
+    opacity: 0;
+}
+
+/* Glass Effect for Hero Content */
+.home-page header .container {
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+/* ================= BLOG SECTION ================= */
+
+.blog-section {
+    position: relative;
+    background-image: linear-gradient(rgba(5, 10, 35, 0.9), rgba(5, 10, 35, 0.9)),
+        url(../../utils/images/blog-section-img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Blog Card Hover Effect */
+.blog-section .card {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+.blog-section .card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* ================= BUTTON EFFECTS ================= */
+
+.btn-danger {
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(220, 53, 69, 0.4);
+}
+
+.btn-outline-light:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media only screen and (max-width: 992px) {
+    .home-page header p {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home-page header p {
+        width: 100%;
+    }
+
+    .home-page header .container {
+        padding: 25px;
+    }
+}
