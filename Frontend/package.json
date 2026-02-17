@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ionut-cora.github.io/react-university-website/",
-  "name": "react-university-website",
+  "homepage": "https://ionut-cora.github.io/GradMap/",
+  "name": "GradMap",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
