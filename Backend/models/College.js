@@ -4,14 +4,19 @@ const collegeSchema = new mongoose.Schema(
   {
     title: {
       type: String,
-      required: true
+      required: true,
     },
     description: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   { timestamps: true }
 );
 
-module.exports = mongoose.model("College", collegeSchema);
+// Third parameter = exact collection name in MongoDB
+module.exports = mongoose.model(
+  "College",
+  collegeSchema,
+  "Colleges"
+);
